@@ -5,3 +5,8 @@
 body {
   margin: 0;
 }
+
+@font-face {
+  font-family: 'bmjua';
+  src: url('./assets/fonts/bmjua.woff') format('woff');
+}
