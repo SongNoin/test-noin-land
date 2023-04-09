@@ -1,6 +1,7 @@
 import { createBrowserRouter } from 'react-router-dom';
-import { Router as RemixRouter } from '@remix-run/router/dist/router';
 import { Home } from '../pages/Home';
+import { GeneralLayout } from '../layouts/GeneralLayout';
+import { QuizMe } from '../pages/QuizMe';
 
 interface RouterBase {
   id: number;
@@ -24,21 +25,22 @@ const routerData: RouterElement[] = [
     element: <Home />,
     withAuth: false,
   },
+  {
+    id: 0,
+    path: '/quizme',
+    label: 'Quizme',
+    element: <QuizMe />,
+    withAuth: false,
+  },
 ];
 
-export const router: RemixRouter = createBrowserRouter(
-  // Todo 레이아웃 설정
-  routerData.map((router) => {
-    if (router.withAuth) {
-      return {
-        path: router.path,
-        element: router.element,
-      };
-    } else {
-      return {
-        path: router.path,
-        element: router.element,
-      };
-    }
-  })
-);
+export const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <GeneralLayout />,
+    children: routerData.map((router) => ({
+      path: router.path,
+      element: router.element,
+    })),
+  },
+]);
