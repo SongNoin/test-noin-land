@@ -2,6 +2,7 @@ import { createBrowserRouter } from 'react-router-dom';
 import { Home } from '../pages/Home';
 import { GeneralLayout } from '../layouts/GeneralLayout';
 import { QuizMe } from '../pages/QuizMe';
+import { CommonQuiz } from '../pages/CommonQuiz';
 
 interface RouterBase {
   id: number;
@@ -26,9 +27,16 @@ const routerData: RouterElement[] = [
     withAuth: false,
   },
   {
-    id: 0,
+    id: 1,
+    path: '/commonquiz',
+    label: 'CommonQuiz',
+    element: <CommonQuiz />,
+    withAuth: false,
+  },
+  {
+    id: 2,
     path: '/quizme',
-    label: 'Quizme',
+    label: 'QuizMe',
     element: <QuizMe />,
     withAuth: false,
   },
