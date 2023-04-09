@@ -3,7 +3,7 @@ import { Header } from './units/Header';
 
 export const GeneralLayout = () => {
   return (
-    <div className=''>
+    <div>
       <Header />
       <div className='w-full px-3 pt-20'>
         <div className='max-w-3xl mx-auto'>
