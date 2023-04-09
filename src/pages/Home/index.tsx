@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom';
-import { GAME_LIST } from './units/GAME_LIST';
+import { MENU_LIST } from './units/MENU_LIST';
 
 export const Home = () => {
   const navigate = useNavigate();
@@ -7,7 +7,7 @@ export const Home = () => {
   return (
     <div>
       <div className='grid grid-cols-2 gap-10'>
-        {GAME_LIST.map((el) => (
+        {MENU_LIST.map((el) => (
           <article
             key={el.id}
             onClick={() => navigate(el.path)}
