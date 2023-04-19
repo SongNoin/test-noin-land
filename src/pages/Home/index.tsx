@@ -6,7 +6,7 @@ export const Home = () => {
 
   return (
     <div>
-      <div className='grid grid-cols-2 gap-10'>
+      <div className='grid grid-cols-2 gap-10 mt-20'>
         {MENU_LIST.map((el) => (
           <article
             key={el.id}
