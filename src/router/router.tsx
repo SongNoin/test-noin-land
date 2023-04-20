@@ -1,8 +1,8 @@
 import { createBrowserRouter } from 'react-router-dom';
-import { Home } from '../pages/Home';
+import { HomePage } from '../pages/Home';
 import { GeneralLayout } from '../layouts/GeneralLayout';
-import { QuizMe } from '../pages/QuizMe';
-import { CommonQuiz } from '../pages/CommonQuiz';
+import { AlbumCoverQuizPage } from '../pages/AlbumCoverQuiz';
+import { CommonQuizPage } from '../pages/CommonQuiz';
 
 interface RouterBase {
   id: number;
@@ -23,21 +23,21 @@ const routerData: RouterElement[] = [
     id: 0,
     path: '/',
     label: 'Home',
-    element: <Home />,
+    element: <HomePage />,
     withAuth: false,
   },
   {
     id: 1,
-    path: '/commonquiz',
+    path: '/common-quiz',
     label: 'CommonQuiz',
-    element: <CommonQuiz />,
+    element: <CommonQuizPage />,
     withAuth: false,
   },
   {
     id: 2,
-    path: '/quizme',
-    label: 'QuizMe',
-    element: <QuizMe />,
+    path: '/albumcover-quiz',
+    label: 'AlbumCoverQuiz',
+    element: <AlbumCoverQuizPage />,
     withAuth: false,
   },
 ];

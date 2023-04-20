@@ -1,7 +1,7 @@
 import { useNavigate } from 'react-router-dom';
 import { MENU_LIST } from './units/MENU_LIST';
 
-export const Home = () => {
+export const HomePage = () => {
   const navigate = useNavigate();
 
   return (

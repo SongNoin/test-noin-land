@@ -5,7 +5,7 @@ interface IMenu {
 }
 
 export const MENU_LIST: IMenu[] = [
-  { id: 1, name: '상식퀴즈', path: '/commonquiz' },
-  { id: 2, name: '나를 맞춰줘', path: '/quizme' },
+  { id: 1, name: '상식퀴즈', path: '/common-quiz' },
+  { id: 2, name: '앨범 재킷 퀴즈', path: '/albumcover-quiz' },
   { id: 3, name: '개발중...', path: '/' },
 ];
