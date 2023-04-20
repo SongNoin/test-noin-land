@@ -1,18 +1,13 @@
 export const CommonQuiz = () => {
-  const answerExample = [
-    '가나다라마바사아자차카타파하가나다라마바사아자차카타파',
-    '2번',
-    '3번',
-    '4번',
-  ];
+  const answerExample = ['1번', '2번', '3번', '4번'];
   return (
-    <div className='mt-6 md:max-w-2xl'>
+    <div className='mt-6'>
       <div className='text-2xl'>
         1. 문제 제목 문제 제목 문제 제목 문제 제목 문제 제목 문제 제목 문제 제목
         문제 제목 문제 제목 문제 제목 문제 제목 문제 제목 문제 제목 문제 제목
       </div>
       <img
-        className='object-contain mt-3 overflow-hidden rounded-md'
+        className='object-contain w-4/5 mx-auto mt-3 overflow-hidden rounded-md'
         alt='quiz image'
         src='https://post-phinf.pstatic.net/MjAyMDAzMDVfMzAw/MDAxNTgzNDEzNTUyNTY1.0fmKJxIpFxmQxagjwEWOuhaqjS0tMcRZhxhsX_IE-KEg.5NjMNR8OD9KZvaLGvhGfvqECleCQ1sb95k0O6B90bnsg.JPEG/%EC%BF%BC%EC%B9%B48.jpg?type=w1200'
       />
