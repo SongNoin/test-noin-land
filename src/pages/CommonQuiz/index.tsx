@@ -1,3 +1,5 @@
+import { MultipleChoice } from '../../components/Question/MultipleChoice';
+
 export const CommonQuiz = () => {
-  return <div>상식퀴즈</div>;
+  return <MultipleChoice />;
 };

@@ -5,8 +5,8 @@ export const GeneralLayout = () => {
   return (
     <div>
       <Header />
-      <div className='w-full px-3 pt-20'>
-        <div className='max-w-3xl mx-auto'>
+      <div className='w-full px-3'>
+        <div className='max-w-3xl mx-auto md:max-w-2xl'>
           <Outlet />
         </div>
       </div>
